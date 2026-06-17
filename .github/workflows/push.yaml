@@ -1,5 +1,7 @@
 name: golang-pipeline
+
 on: push
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -36,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: aikospartak/finalcicd
+          images: rudiariu6/finalcicd
 
       - name: Build and push Docker Image
         uses: docker/build-push-action@v5
